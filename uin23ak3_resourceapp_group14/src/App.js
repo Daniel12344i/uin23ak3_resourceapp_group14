@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./App.css"; // Anta at denne inneholder stiler for .tab-button osv.
+import "./css/main.css"; // Anta at denne inneholder stiler for .tab-button osv.
 import { resources } from "./Ressurserdata";
 
 function App() {

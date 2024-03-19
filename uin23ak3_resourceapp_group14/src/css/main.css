@@ -1,66 +1,109 @@
-html {
-  margin-top: 100px;
-  margin-right: 200px;
-  margin-bottom: 100px;
-  margin-left: 200px;
-}
+
 
 body {
   font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
-header {
-  padding: 20px;
-  border: 0.5px solid gray;
-}
-
-header h1 {
-  color: grey;
-  font-weight: bold;
-  text-transform: uppercase;
+#container {
+  
+  background-color: #fff;
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  min-width: 800px;
+  
 }
 
 nav {
-  margin-top: 50px;
-  background-color: #f2f2f2;
-  padding: 25px;
-  background-color: rgb(19, 182, 182);
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  height: 50px;
 }
 
 nav ul {
-  list-style-type: none;
-  margin: 0;
   padding: 0;
+  list-style: none;
+  display: flex;
 }
 
-nav ul li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-nav ul li a {
+nav a {
   text-decoration: none;
-  color: white;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding-right: 25px;
+  color:white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  flex: 1;
+  text-align: center;
+  margin: 0 40px;
+  background-color: black;
+}
+
+
+
+.tab-button-html {
+  background-color: var(--html-color);
+  color: #333;
+}
+
+.tab-button-css {
+  background-color: var(--css-color);
+  color: #fff;
+}
+
+.tab-button-js {
+  background-color: var(--js-color);
+  color: #fff;
+}
+
+.tab-button-react {
+  background-color: var(--react-color);
+  color: #fff;
+}
+
+.tab-button-sanity {
+  background-color: var(--sanity-color);
+  color: #fff;
 }
 
 #content {
-  margin: 25px;
-  color: grey;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  min-height: 200px;
+  max-height: 500px;
+  max-width: 800px;
+  min-width: 600px;
+  margin-bottom: 20px;
+
 }
 
-#content h2 {
-  margin-bottom: 10px;
-  color: grey;
-  text-transform: uppercase;
+
+
+@media (max-width: 768px) {
+  #container {
+    width: 90%;
+  }
+
+  nav {
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    width: calc(50% - 10px);
+    margin-bottom: 10px;
+    text-align: center;
+  }
 }
 
-#content ul {
-  list-style-type: circle;
-}
-
-#content ul a {
-  color: rgb(19, 182, 182);
+@media (max-width: 480px) {
+  nav a {
+    width: 100%;
+  }
 }

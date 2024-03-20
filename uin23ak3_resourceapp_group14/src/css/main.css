@@ -12,8 +12,6 @@ body {
 }
 
 #container {
-  
-  
   padding: 40px;
   
 
@@ -37,7 +35,6 @@ nav a {
   text-decoration: none;
   color:white;
   padding: 36px 49px;
- 
   transition: background-color 0.3s ease;
   flex: 1;
   text-align: center;
@@ -87,7 +84,6 @@ nav a:focus{
 
 #content {
   padding: 20px;
-  
   border-radius: 5px;
   min-height: 300px;
   max-height: 500px;

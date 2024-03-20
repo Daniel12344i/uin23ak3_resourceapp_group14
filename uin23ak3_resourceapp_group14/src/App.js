@@ -7,6 +7,7 @@ import {
   Routes,
   Link,
   useParams,
+  Navigate,
 } from "react-router-dom"; // Import useParams, Link, and Routes here
 
 // Definér en ny komponent for å håndtere visning basert på URL-parametere
@@ -71,6 +72,8 @@ function App() {
 
         {/* Rute for å håndtere dynamisk kategorivalg basert på URL */}
         <Routes>
+          <Route path="/" element={<Navigate to="/HTML" replace />} />
+
           <Route path="/:category" element={<CategoryView />} />
         </Routes>
       </div>
